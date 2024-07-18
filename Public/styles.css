@@ -1,0 +1,64 @@
+/* Estilo para as abas */
+.tabs {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.tablink {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+.tablink.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/* Estilo para o ranking */
+#playersList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.player-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.player-info {
+  flex-grow: 1;
+}
+
+.stars {
+  color: gold;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.progress {
+  background-color: green;
+  height: 100%;
+}
