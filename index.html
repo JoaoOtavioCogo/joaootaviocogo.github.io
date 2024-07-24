@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futebol App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Futebol App</h1>
@@ -18,8 +18,6 @@
         <form id="addPlayerForm">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
-            <label for="level">Nível:</label>
-            <input type="number" id="level" name="level" required>
             <label for="goals">Gols:</label>
             <input type="number" id="goals" name="goals" required>
             <label for="assists">Assistências:</label>
@@ -34,7 +32,34 @@
 
     <div id="rankingTab" class="tabcontent">
         <h2>Ranking de Jogadores</h2>
-        <ul id="playersList"></ul>
+        <div class="tabs">
+            <button class="tablink" onclick="openSubTab(event, 'tab-1-star')">1 Estrela</button>
+            <button class="tablink" onclick="openSubTab(event, 'tab-2-star')">2 Estrelas</button>
+            <button class="tablink" onclick="openSubTab(event, 'tab-3-star')">3 Estrelas</button>
+            <button class="tablink" onclick="openSubTab(event, 'tab-4-star')">4 Estrelas</button>
+            <button class="tablink" onclick="openSubTab(event, 'tab-5-star')">5 Estrelas</button>
+        </div>
+
+        <div id="tab-1-star" class="subtabcontent">
+            <h3>Jogadores com 1 Estrela</h3>
+            <div id="playersList-1-star"></div>
+        </div>
+        <div id="tab-2-star" class="subtabcontent">
+            <h3>Jogadores com 2 Estrelas</h3>
+            <div id="playersList-2-star"></div>
+        </div>
+        <div id="tab-3-star" class="subtabcontent">
+            <h3>Jogadores com 3 Estrelas</h3>
+            <div id="playersList-3-star"></div>
+        </div>
+        <div id="tab-4-star" class="subtabcontent">
+            <h3>Jogadores com 4 Estrelas</h3>
+            <div id="playersList-4-star"></div>
+        </div>
+        <div id="tab-5-star" class="subtabcontent">
+            <h3>Jogadores com 5 Estrelas</h3>
+            <div id="playersList-5-star"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>

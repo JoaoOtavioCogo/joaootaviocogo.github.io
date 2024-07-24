@@ -1,18 +1,21 @@
 [
   {
+    "id": "1721764191521",
     "name": "João Otávio Cogo de Castro",
-    "level": 4
-  },
-  {
-    "name": "mamae",
-    "level": 3
-  },
-  {
-    "name": "Gerabixo",
-    "level": 1,
+    "level": 290,
     "goals": 0,
     "assists": 0,
-    "wins": 0,
+    "wins": 2,
     "losses": 0
-  }
+  },
+  {
+    "id": "1721789409801",
+    "name": "ana",
+    "level": 190,
+    "goals": 0,
+    "assists": 0,
+    "wins": 5,
+    "losses": 8
+  },
+  {}
 ]
